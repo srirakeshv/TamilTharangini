@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&family=Outfit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Noto+Sans+Tamil&family=Outfit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Coiny&family=Noto+Sans+Tamil&family=Outfit:wght@100&family=Tiro+Tamil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Coiny&family=Kavivanar&family=Noto+Sans+Tamil&family=Outfit:wght@100&family=Tiro+Tamil&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@200;300;400&family=Catamaran:wght@300&family=Coiny&family=Kavivanar&family=Noto+Sans+Tamil&family=Outfit:wght@100&family=Tiro+Tamil&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    background-color: #D8D9DA;
+    width: 100vw;
+    overflow-x: hidden;
+}
+html,body,h1,li,img,div,h2,span{
+    margin: 0;
+    padding: 0;
+}
+/* navigation bar */
+.landingpage{
+    display: flex;
+    flex-direction: column;
+    background-color: #9288F8;
+}
+
+.landingpage nav a i{
+    margin-right: 5px;
+}
+.landingpage .college{
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+    font-family: Arima;
+}
+@media screen and (max-width: 420px) {
+    .landingpage .loho h2 {
+        font-size: 20px;
+      }
+    }
+@media screen and (max-width: 490px) {
+    .college{
+        font-size: 0.7rem;
+    }
+}
+/* achievement section */
+.title{
+    background-color: #9288F8;
+    margin: 10px 10px 0 10px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    color: #C51605;
+    font-family: Coiny;
+    font-size: 18px;
+}
+.achievement1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #D8D9DA;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 3px black;
+}
+.achievement1 .img{
+    flex: 0 0 300px;
+    margin-right: 10px;
+}
+.achievement1 img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.achievement1 .text{
+    flex: 1 0 300px;
+    padding: 10px;
+    background-color: #9288F8;
+    border-radius: 10px;
+    margin-left: 0px;
+    text-align: justify;
+    font-family: Tiro Tamil;
+    font-weight: 400;
+    color: black;
+}
+.achievement1 .text p:nth-child(2){
+    text-align: right;
+    font-weight: 600;
+}
+.achievement1 .feather{
+    width: 30px;
+    height: 30px;
+}
+@media all and (max-width: 540px) {
+    .achievement1 .text p:nth-child(2){
+        font-size: 13px;
+        padding-top: 10px;
+    }
+}
