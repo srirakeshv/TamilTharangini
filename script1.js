@@ -1,3 +1,4 @@
+// thirukural api
 let first = document.querySelector('#firstline');
 let second = document.querySelector('#secondline');
 let meaning=document.querySelector('#explanation')
