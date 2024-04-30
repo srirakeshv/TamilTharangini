@@ -2,7 +2,7 @@
 let first = document.querySelector("#firstline");
 let second = document.querySelector("#secondline");
 let meaning = document.querySelector("#explanation");
-let currentKuralNumber = 1;
+let currentKuralNumber = 0;
 let lastUpdateTimestamp = 0;
 
 function fetchAndUpdateThirukural(kuralNumber) {
@@ -12,6 +12,7 @@ function fetchAndUpdateThirukural(kuralNumber) {
     })
     .then((msg) => {
       console.log(msg);
+      console.log(kuralNumber);
       let selectedKural = msg.kural[kuralNumber - 1];
       console.log(selectedKural);
       let line1 = selectedKural.Line1;
@@ -31,8 +32,8 @@ function updateThirukuralOncePerDay() {
   const oneDayInMillis = 24 * 60 * 60 * 1000; // One day in milliseconds
 
   if (now - lastUpdateTimestamp >= oneDayInMillis) {
-    fetchAndUpdateThirukural(currentKuralNumber);
     currentKuralNumber = (currentKuralNumber % 1330) + 1;
+    fetchAndUpdateThirukural(currentKuralNumber);
     lastUpdateTimestamp = now;
   }
 }
